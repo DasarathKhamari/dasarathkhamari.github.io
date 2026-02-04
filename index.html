@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Kiran | Frontend Developer</title>
+
+  <!-- MAIN CSS -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- FONT AWESOME ICONS -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="logo">DK</div>
+    <ul class="nav-links">
+      <li onclick="showSection('home')">Home</li>
+      <li onclick="showSection('about')">About</li>
+      <li onclick="showSection('experience')">Experience</li>
+      <li onclick="showSection('work')">Work</li>
+      <li onclick="showSection('contact')">Contact</li>
+    </ul>
+  </nav>
+
+  <!-- MAIN CONTENT -->
+  <main class="content">
+
+    <!-- HOME -->
+    <section id="home" class="section active home-section">
+      <h1 class="home-title">
+        Hi, I’m <span class="highlight">Dasarath Khamari</span>
+      </h1>
+
+      <p class="home-subtitle">
+        Frontend Developer | 3rd Year CSE Student
+      </p>
+
+      <button class="home-btn" onclick="showSection('about')">
+        Explore About Me
+      </button>
+
+      <!-- ✅ SOCIAL ICONS MOVED TO HOME -->
+      <div class="social-links">
+        <a href="https://github.com/DasarathKhamari" target="_blank" aria-label="GitHub">
+          <i class="fa-brands fa-github"></i>
+        </a>
+
+        <a href="https://www.linkedin.com/in/dasarath-khamari-49b961377?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+           target="_blank" aria-label="LinkedIn">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+
+        <a href="https://www.instagram.com/unfav_kiran0?igsh=NHlreDB0aGp0N3Z1"
+           target="_blank" aria-label="Instagram">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section about-section">
+
+      <h1 class="about-title">
+        Hi, I’m <span class="highlight">Dasarath Khamari</span>
+      </h1>
+
+      <p class="about-subtitle">
+        Frontend Developer | 3rd Year CSE Student
+      </p>
+
+      <p class="about-text">
+        I’m a passionate <strong>Frontend Developer</strong> and a
+        <strong>3rd year Computer Science & Engineering student</strong> who
+        enjoys building modern, responsive, and user-friendly web applications.
+      </p>
+
+      <p class="about-text">
+        I also have hands-on experience in
+        <strong>Machine Learning</strong>, <strong>IoT projects</strong>,
+        and a solid understanding of <strong>DBMS & MySQL</strong>.
+      </p>
+
+      <div class="about-grid">
+        <div>
+          <h3>Internships</h3>
+          <ul>
+            <li>Completed 2 Internships (Tech & Development)</li>
+          </ul>
+        </div>
+
+        <div>
+          <h3>Projects</h3>
+          <ul>
+            <li>IoT Project using Sensors (Hardware)</li>
+            <li>Sign Language to Text Conversion (ML)</li>
+            <li>Early Diabetes Detection System (ML)</li>
+          </ul>
+        </div>
+
+        <div>
+          <h3>Skills</h3>
+          <ul>
+            <li>HTML, CSS, JavaScript</li>
+            <li>Machine Learning Basics</li>
+            <li>DBMS & MySQL</li>
+            <li>Git & GitHub</li>
+          </ul>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section">
+      <h1>Experience</h1>
+      <p>
+        Completed 2 internships focused on development and real-world projects.
+        Gained experience working with frontend technologies and teamwork.
+      </p>
+    </section>
+
+    <!-- WORK -->
+    <section id="work" class="section">
+      <h1>My Work</h1>
+      <ul>
+        <li>Portfolio Website</li>
+        <li>ML & IoT Academic Projects</li>
+        <li>Mini JavaScript Applications</li>
+      </ul>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <h1>Contact</h1>
+      <p>Email: khamarikiran199@gmail.com</p>
+      <p>Phone: +91 8260999278</p>
+    </section>
+
+  </main>
+
+  <!-- SCRIPT -->
+  <script>
+    function showSection(sectionId) {
+      const sections = document.querySelectorAll(".section");
+      sections.forEach(section => section.classList.remove("active"));
+
+      const target = document.getElementById(sectionId);
+      if (target) {
+        target.classList.add("active");
+      }
+    }
+  </script>
+
+</body>
+</html>
