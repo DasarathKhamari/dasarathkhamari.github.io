@@ -5,70 +5,62 @@ const Career = () => {
     <div className="career-section section-container">
       <div className="career-container">
         <h2>
-          My career <span>&</span>
+          My journey <span>&</span>
           <br /> experience
         </h2>
         <div className="career-info">
           <div className="career-timeline">
             <div className="career-dot"></div>
           </div>
+
+          {/* Current */}
           <div className="career-info-box">
             <div className="career-info-in">
               <div className="career-role">
-                <h4>Co-Founder</h4>
-                <h5>CallHQ.ai</h5>
+                <h4>CSE Student</h4>
+                <h5>Your University</h5>
               </div>
               <h3>NOW</h3>
             </div>
             <p>
-              Building CallHQ.ai, a voice AI platform for
-              automating customer calls, support, and conversions.
+              Currently pursuing Computer Science Engineering, focusing on
+              software development, data structures, and problem-solving.
+              Actively building projects and improving technical skills.
             </p>
           </div>
+
+          {/* Projects */}
           <div className="career-info-box">
             <div className="career-info-in">
               <div className="career-role">
-                <h4>Adobe</h4>
-                <h5>6+ years · Noida</h5>
+                <h4>Project Work</h4>
+                <h5>Personal / Academic</h5>
               </div>
-              <h3>2017–24</h3>
+              <h3>2024–Present</h3>
             </div>
             <p>
-              Senior Lead Software Engineer (Feb 2024 – May 2024). Lead Software
-              Engineer (Feb 2021 – Feb 2024). Software Engineer II (Dec 2017 –
-              Feb 2021): internationalization, globalization, and localization for
-              Adobe Technical Communication Suite; functional and linguistic testing
-              strategy; in-house tooling; collaboration with product and engineering
-              for high-quality localized releases.
+              Developed multiple projects in web development and machine learning,
+              gaining hands-on experience in building real-world applications and
+              improving coding skills.
             </p>
           </div>
+
+          {/* Learning */}
           <div className="career-info-box">
             <div className="career-info-in">
               <div className="career-role">
-                <h4>Consultant</h4>
-                <h5>Genpact Headstrong </h5>
+                <h4>Skill Development</h4>
+                <h5>Self Learning</h5>
               </div>
-              <h3>2016–17</h3>
+              <h3>2023–Present</h3>
             </div>
             <p>
-              Sep 2016 – Nov 2017. Developed and maintained WCF services consumed
-              by the UI; deployment support across environments; NUnit tests and
-              coverage; bug fixes from QA and users; database work.
+              Continuously learning new technologies including programming languages,
+              frameworks, and tools. Practicing problem-solving and exploring new areas
+              like machine learning and web development.
             </p>
           </div>
-          <div className="career-info-box">
-            <div className="career-info-in">
-              <div className="career-role">
-                <h4>Sf Engineer</h4>
-                <h5>Infogain</h5>
-              </div>
-              <h3>2013-16</h3>
-            </div>
-            <p>
-              Software engineering across enterprise projects, contributing to
-              design, development, and delivery of business applications.
-            </p>
-          </div>
+
         </div>
       </div>
     </div>
